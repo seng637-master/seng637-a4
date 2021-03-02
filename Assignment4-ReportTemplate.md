@@ -1,5 +1,6 @@
 **SENG 637 - Dependability and Reliability of Software Systems**
 
+
 **Lab. Report \#4 – Mutation Testing and Web app testing**
 
 | Group \#:       |   |
@@ -11,13 +12,12 @@
 
 # Introduction
 
-# 
 
 # Analysis of 10 Mutants of the Range class 
 
 # Report all the statistics and the mutation score for each test class
 
-# 
+
 
 # Analysis drawn on the effectiveness of each of the test classes
 
@@ -37,7 +37,6 @@
 
 # How the team work/effort was divided and managed
 
-# 
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
