@@ -4,9 +4,9 @@
 
 > **Mutation Testing (Fault Injection) & GUI and Web Testing**
 
-> Instructor: Dr. Behrouz Far (far@ucalgary.ca)
+> Instructor: Dr. Behrouz Far (far@ucalgary.ca) 
 
-> Department of Electrical and Computer Engineering
+> Department of Electrical and Software Engineering
 
 > University of Calgary
 
@@ -75,9 +75,16 @@ Similar to assignments 2 and 3, the system to be tested for this part is JFreeCh
 
 ### 2.4.1 INSTALL Pitest
 
-1.  Go to Eclipse market and find Pitest Plugin: https://marketplace.eclipse.org/content/pitclipse
+1.  In your Eclipse select Help, go to Eclips Marketpalce, and find Pitest Plugin by copy and paste the following link: https://marketplace.eclipse.org/content/pitclipse
 
-2.  Follow the installation process. Note: Run Eclipse “as administrator” in Windows
+2.  Follow the installation process. Note: Run Eclipse “as administrator” in Windows, click on preferences, on the left side click on Pitest and then select Mutators, choose All mutators, and finally apply and close.
+
+![](./media/2-Preferances.png)
+
+![](./media/9-Pitest.png)
+
+![](./media/1-Mutators.png)
+
 
 3.  If you could not find the Pitclipse in your Eclipse Marketplace please do the followings:
 
@@ -91,12 +98,8 @@ Similar to assignments 2 and 3, the system to be tested for this part is JFreeCh
 
 Note that, Pitest by default employs only mutation operators at the method-level. **You need to enable the class-level mutators before starting your tests.** Follow these steps to select all mutators.
 
-> ![](media/e03aee2c8df82684fc4ead40e075cc03.png) OR
-> ![](media/82933c2b9b740d67d3b8373e4bf9a5e4.png)
-
-> ![](media/6a63389ce9572a3362549438e1c47b8a.jpeg)
-
 **Figure 1 – Enabling mutators in Pitest**
+
 
 ## 2.5 INSTRUCTIONS
 
@@ -114,15 +117,27 @@ Add the JFreeChart source code given in assignment 4 to your project. Add all li
 
 As a practice, run mutation tests on the test cases provided under `org.jfree.data.junit` in the test folder of _JFreeChart_Lab4_ project. Record all results. (Right click on the `org.jfree.data.junit` and then run as PIT Mutation Test)
 
+
 1.  Note that in order to run mutation tools successfully, your test cases must pass (all green). For example, the `DataUtilitiesTes` test case has error in `org.jfree.data.junit`, running Pitest you will get exception. If there is any defect that is found by the tests (error/failure), they need to be fixed in the code before running the mutation tool.
+
+![](media/6-Run-Junit.png)
+
+![](media/7-Pass-Junit.png)
+
+![](media/8-PIT-Mutation-Test.png)
+
 
 2.  Expect that mutation testing of some classes might take long time. Let the tool runs and do not terminate it until the test ends and you get the mutation testing reports.
 
-> ![](media/c06edf47ecf81da9605d5697af8883ca.jpeg)
 
-> ![](media/3149b3e4d04a27cbb703ed6f6508b3d8.png)
+> ![](./media/3-PIT-Summary.png)
 
-> ![](media/8d3b52af71701be43b01d1772339bcac.png)
+
+
+> ![](./media/4-PIT-Mutations.png)
+
+
+> ![](./media/5-Console.png)
 
 ### 2.5.5 Run Mutation Testing on your own test cases
 
@@ -155,11 +170,11 @@ The main objective of this part of the assignment is to familiarize students wit
 
 In this assignment, you will mainly use Selenium web-interface testing tool to test one of the following websites.
 
-- IKEA page
+- Staples
 
-- Amazon page
+- Indigo
 
-- e-bay
+- Canadian Tire
 
 You will also explore this alternative tool: Sikulix (http://sikulix.com/quickstart/)
 
