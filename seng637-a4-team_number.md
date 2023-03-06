@@ -1,20 +1,15 @@
-**SENG 637- Dependability and Reliability of Software Systems**
+**SENG 637 - Dependability and Reliability of Software Systems**
 
 **Lab. Report \#4 – Mutation Testing and Web app testing**
 
-| Group \#:       |   |
-|-----------------|---|
-| Student Names:  |   |
-|                 |   |
-|                 |   |
-|                 |   |
+| Group \#:      |     |
+| -------------- | --- |
+| Student Names: |     |
+|                |     |
+|                |     |
+|                |     |
 
 # Introduction
-
-# Link of demo video 
-
-Make a video of the demo and put its link here.
-All members must participate in the demo and the video should not be longer than 10 minutes.
 
 
 # Analysis of 10 Mutants of the Range class 

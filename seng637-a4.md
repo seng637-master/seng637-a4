@@ -1,16 +1,19 @@
-**SENG 637 - Dependability and Reliability of Software Systems**
 
-> **Assignment \#4**
 
-> **Mutation Testing (Fault Injection) & GUI and Web Testing**
+****SENG 637 - Dependability and Reliability of Software Systems**
+**
+>   **Assignment \#4**
+>   **Mutation Testing (Fault Injection) & GUI and Web Testing**
+>   Instructors: 
+>   -   Dr. Behrouz Far (far@ucalgary.ca)
+> 
+>   Department of Electrical and Software Engineering
+>   University of Calgary
 
-> Instructor: Dr. Behrouz Far (far@ucalgary.ca) 
+Due Date: Check D2L for the submission deadline.
 
-> Department of Electrical and Software Engineering
 
-> University of Calgary
-
-**Due Date: TBD**
+<span style="color:DarkCyan  ">**Due Date: March 17th 2023**
 
 > **Summary:
 > Part 1:**
@@ -53,23 +56,23 @@ The purpose of the first part of this assignment is to give students hands-on ex
 
 After completing part 1, students will:
 
-- gain an understanding of what mutation testing is and why it is useful
+- Gain an understanding of what mutation testing is and why it is useful
 
-- be able to measure the mutation score of their test suites in order to analyze the results
+- Be able to measure the mutation score of their test suites in order to analyze the results
 
-- become familiar with the use of a mutation testing tool
+- Become familiar with the use of a mutation testing tool
 
 ## 2.2 TESTING TOOLS
 
-The only testing tool to be used in this part, aside from JUnit is Pitest [4], a mutation tool which includes a plug-in for Eclipse. Pitest is aimed at providing testers with a tool which provides automated generation of mutants, as well as running tests against those mutants.
+The only testing tool to be used in this part, aside from JUnit is Pitest **[4]**, a mutation tool which includes a plug-in for Eclipse. Pitest is aimed at providing testers with a tool which provides automated generation of mutants, as well as running tests against those mutants.
 
 Pitest streamlines the process of creating mutants by providing a mutant generation engine based on many defined mutation operators. Pitest provides functionality to facilitate the creation of mutants as well as running unit tests on those mutants in order to calculate a mutation score.
 
-As discussed in the class, mutation operators in Java object-oriented software are generally of two types: method-level [1] and class-level [2]. Some of the tools (e.g. Pitest) by default employs only mutation operators at the method-level. You need to enable the class-level mutators before starting your tests.
+As discussed in the class, mutation operators in Java object-oriented software are generally of two types: method-level **[1]** and class-level **[2]**. Some of the tools (e.g. Pitest) by default employs only mutation operators at the method-level. You need to enable the class-level mutators before starting your tests.
 
 ## 2.3 SYSTEM UNDER TEST
 
-Similar to assignments 2 and 3, the system to be tested for this part is JFreeChart [3]. To get started with the JFreeChart system, download the “JFreeChart v3.0.zip” file from assignment 4 folder and extract the entire archive to a known location.
+Similar to assignments 2 and 3, the system to be tested for this part is JFreeChart **[3]**. To get started with the JFreeChart system, download the “JFreeChart v3.0.zip” file from assignment 4 folder and extract the entire archive to a known location.
 
 ## 2.4 FAMILIARIZATION
 
@@ -77,7 +80,7 @@ Similar to assignments 2 and 3, the system to be tested for this part is JFreeCh
 
 1.  In your Eclipse select Help, go to Eclips Marketpalce, and find Pitest Plugin by copy and paste the following link: https://marketplace.eclipse.org/content/pitclipse
 
-2.  Follow the installation process. Note: Run Eclipse “as administrator” in Windows, click on preferences, on the left side click on Pitest and then select Mutators, choose All mutators, and finally apply and close.
+2.  Follow the installation process. Note: Run Eclipse “as administrator” in Windows, click on preferences, on the left side click on Pitest and then select Mutators, choose All mutators, and finally apply and close.If you can not find preferences trough window tab you can simply look for it in the search (up right corner). **The latest version is Pitclips 2.2.0**
 
 ![](./media/2-Preferances.png)
 
@@ -92,11 +95,11 @@ Similar to assignments 2 and 3, the system to be tested for this part is JFreeCh
 
     2.  Click Add, in the top-right corner.
 
-    3.  Put Name: Pitclipse and Location: <http://eclipse.pitest.org/release/>
+    3.  Put Name: Pitclipse and Location:  http://eclipse.pitest.org/release/
 
     4.  Press Add and follow the installation process
 
-Note that, Pitest by default employs only mutation operators at the method-level. **You need to enable the class-level mutators before starting your tests.** Follow these steps to select all mutators.
+Note that, Pitest by default employs only mutation operators at the method-level. <span style="color:MidnightBlue   ">**You need to enable the class-level mutators before starting your tests.** <span style="color:black ">Follow these steps to select all mutators.
 
 **Figure 1 – Enabling mutators in Pitest**
 
@@ -105,7 +108,7 @@ Note that, Pitest by default employs only mutation operators at the method-level
 
 ## 2.5.1 Mutation Testing
 
-You should run Pitest on your own test suites `DataUtilitiesTest` and `RangeTest` from assignment 3.
+You should run Pitest on your own test suites `DataUtilitiesTest`** and `RangeTest`** from assignment 3.
 
 ### 2.5.2 Create a new Eclipse project
 
@@ -158,7 +161,7 @@ Report the process you followed for this part plus your findings and results in 
 
 ### 2.5.7 Add More Test Cases to increase Mutation Score
 
-In this phase, we want to increase the mutation score. For each of the classes under mutation testing (`Range` and `DataUtilities`), measure the mutation score of your original test suites from assignment 3. Aim at increasing mutation scores for `Range` and `DataUtilities` each by at least 10%, e.g., if it is 55%, make it at least 65%. Discuss in your report the test cases that you had to add to increase the mutation score, and also how you designed them.
+In this phase, we want to increase the mutation score. For each of the classes under mutation testing (`Range` and `DataUtilities`), measure the mutation score of your original test suites from assignment 3. Aim at increasing mutation scores for `Range` and `DataUtilities` each by at least <span style="color:green">10% <span style="color:black">, e.g., if it is <span style="color:green">55%<span style="color:black">, make it at least<span style="color:green"> 65%<span style="color:black">. Discuss in your report the test cases that you had to add to increase the mutation score, and also how you designed them.
 
 # 3 Part 2: GUI TESTING
 
@@ -170,11 +173,11 @@ The main objective of this part of the assignment is to familiarize students wit
 
 In this assignment, you will mainly use Selenium web-interface testing tool to test one of the following websites.
 
-- Staples
+- <span style="color:green">Shop Smart Canada Page
 
-- Indigo
+- <span style="color:blue">Home Depot Page
 
-- Canadian Tire
+- <span style="color:purple">Leon's Page
 
 You will also explore this alternative tool: Sikulix (http://sikulix.com/quickstart/)
 
@@ -212,7 +215,7 @@ You will also explore this alternative tool: Sikulix (http://sikulix.com/quickst
 
     2.  Submit your Selenium test scripts and provide all required files for running your scripts. Your test scripts should not be computer dependent and must be run on your TAs computer.
 
-        1.  Your TA will ask you to demo your scripts in lab.
+        1.  The TA's will check  your Selenium test scripts in the recorded video as well.
 
 # 4 Evaluation Criteria
 
@@ -220,36 +223,39 @@ You will also explore this alternative tool: Sikulix (http://sikulix.com/quickst
 
 The objectives for the demo are a) Preparing you for technical presentations, b) an early assessment of your work to give you a second chance to submit a high-quality report, and c) making sure everybody in the team contributes evenly.
 
-It is mandatory for all team members to attend the demo session and explain the TAs in the lab what they have done for this assignment. For this particular assignment, Lab8 is the demo day. You are expected to almost finish the assignment by the lab hour. All the team members should attend the lab. The TAs will go through the groups and each group must demonstrate one mutant (generated by PIT) that is killed by the original test suite and one that is not. Different student should demonstrate different mutants.
-Each student should also run a recorded test case with Selenium IDE.
+It is mandatory for all team members to attend the recorded demo and explain the TA's in the video what they have done for this assignment. You are expected to do the demo between <span style="color:green"> **10-12** <span style="color:black">minuetes. The TA's will go through the groups and each group must demonstrate one mutant (generated by PIT) that is killed by the original test suite and one that is not. Different student should demonstrate different mutants.
+Each student should also run a recorded test case with Selenium IDE in the recorded video.
 
-**NOTE1: Student who miss the demo session or are unable to demo what is detailed above are considered as less- contributors and may lose up to the entire assignment 3’s mark.**
 
-**NOTE2: You still have time to further improve your test suite, after the demo session and before the deadline.**
+
+<span style="color:MidnightBlue   ">**NOTE1: Student who miss the demo session or are unable to demo what is detailed above are considered as less- contributors and may lose up to the entire assignment 4’s mark.**
+
+
+
 
 ## 4.2 Lab report and Test suites (85%)
 
 Students will be required to submit a report on their work in the lab as a group. To be consistent, please use the template markdown file “Assignment4-ReportTemplate.md” provided online under the Assignment 4 folder. If desired, feel free to rename the sections, as long as the headings are still descriptive and accurate.
 
-**NOTE3: include folder together with your report. One containing Part 1’s final test suite, another containing Selenium test scripts.**
+<span style="color:MidnightBlue   ">**NOTE2: include folder together with your report. One containing Part 1’s final test suite, another containing Selenium test scripts.**
 
 A portion of the grade for the lab report will be allocated to organization and clarity. The report marking scheme is as follows:
 
-| **Mutation Testing (50)**                                                                                                                                     |     |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
-| Analysis of at least 10 mutants produced by Pitest for the `Range` class, and how they are killed or not by your original test suite                            | 10  |
+| **Mutation Testing (50)**                                                                                                                                         |     |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| Analysis of at least 10 mutants produced by Pitest for the `Range` class, and how they are killed or not by your original test suite                              | 10  |
 | All the statistics and the mutation score for each of the mutated classes (`Range` and `DataUtilities`) with each test suite class (original and the updated one) | 20  |
-| A discussion on the effect of equivalent mutants on mutation score accuracy including a discussion on how equivalent mutants could be detected                | 10  |
-| A discussion of how you improved the mutation score of the test suites. Your design strategy.                                                                 | 5   |
-| A discussion on the advantages and disadvantages of mutation testing                                                                                          | 5   |
-| **GUI Testing (33)**                                                                                                                                          |     |
-| Correctness and completeness of the Recorded test cases (at least 2 per group member)                                                                         | 10  |
-| Explain your test case design process                                                                                                                         | 5   |
-| Use of automated verification points in each script. If automated verification point is not used, provide valid reason                                        | 5   |
-| Use different test data per test. If not used, provide valid reason                                                                                           | 5   |
-| Discuss advantages and disadvantages of Selenium vs. Sikulix                                                                                                  | 8   |
-| **Other (2)**                                                                                                                                                 |     |
-| A discussion on how the team work/effort was divided and managed. Any lessons learned from your teamwork on this lab?                                         | 2   |
+| A discussion on the effect of equivalent mutants on mutation score accuracy including a discussion on how equivalent mutants could be detected                    | 10  |
+| A discussion of how you improved the mutation score of the test suites. Your design strategy.                                                                     | 5   |
+| A discussion on the advantages and disadvantages of mutation testing                                                                                              | 5   |
+| **GUI Testing (33)**                                                                                                                                              |     |
+| Correctness and completeness of the Recorded test cases (at least 2 per group member)                                                                             | 10  |
+| Explain your test case design process                                                                                                                             | 5   |
+| Use of automated verification points in each script. If automated verification point is not used, provide valid reason                                            | 5   |
+| Use different test data per test. If not used, provide valid reason                                                                                               | 5   |
+| Discuss advantages and disadvantages of Selenium vs. Sikulix                                                                                                      | 8   |
+| **Other (2)**                                                                                                                                                     |     |
+| A discussion on how the team work/effort was divided and managed. Any lessons learned from your teamwork on this lab?                                             | 2   |
 
 # 5 REFERENCES
 
